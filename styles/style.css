@@ -1,6 +1,12 @@
 /* fonts import*/
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&family=Poppins:wght@500&family=Work+Sans&display=swap");
 
+:root {
+  --orange: #ff900e;
+  --black: #131313;
+  --gray: #727272;
+}
+
 /* html body */
 body {
   font-family: "Work Sans", sans-serif;
@@ -10,7 +16,7 @@ body {
 
 /* primary button */
 .btn-primary {
-  background: #ff900e;
+  background: var(--orange);
   border-radius: 8px;
   color: #ffffff;
   font-weight: 600;
@@ -20,7 +26,24 @@ body {
   border: none;
 }
 /* primary button end */
-
+/* all global class */
+p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray);
+  margin-bottom: 32px;
+  margin-top: 0px;
+  line-height: 26px;
+}
+.orange {
+  color: var(--orange);
+  font-weight: 700;
+}
+.black {
+  color: var(--black);
+  font-weight: 700;
+}
+/* all global class */
 /* header section start */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -37,7 +60,7 @@ header {
 .nav-heading {
   font-weight: 700;
   font-size: 45px;
-  color: #131313;
+  color: var(--black);
 }
 .nav-items > ul {
   padding: 0;
@@ -75,16 +98,13 @@ header {
 .header-content h1 {
   font-weight: 700;
   font-size: 64px;
-  color: #131313;
+  color: var(--black);
   margin-top: 102px;
   margin-bottom: 32px;
 }
-.header-content p {
-  font-weight: 400;
-  font-size: 16px;
-  color: #727272;
-  margin-bottom: 32px;
-  margin-top: 0px;
+
+.header-image {
+  margin-bottom: 45px;
 }
 .header-image img {
   height: 700px;
@@ -93,3 +113,92 @@ header {
 /* header container end */
 
 /* header section end*/
+
+/* main section start */
+main {
+  width: 80%;
+  margin: auto;
+}
+.container-quick-list {
+  display: flex;
+  gap: 73px;
+  padding-top: 85px;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
+}
+.quick-list-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 24px;
+  grid-column-gap: 24px;
+  width: 60%;
+}
+.team-img {
+  height: 100%;
+  width: 100%;
+}
+.quick-list-content {
+  width: 40%;
+}
+.quick-list-content h3 {
+  font-weight: 500;
+  font-size: 45px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.features {
+  padding-top: 130px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 54px;
+  height: 1059px;
+}
+.feature-image {
+  width: 60%;
+}
+
+.architect-img {
+  float: right;
+  width: 90%;
+  height: 95%;
+}
+.feature-content {
+  width: 40%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.bordered-heading {
+  border-left: 6px solid var(--orange);
+}
+.bordered-heading h3 {
+  padding-left: 25px;
+  font-weight: 700;
+  font-size: 45px;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.feature-grid-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.feature-grid-content .item {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.feature-grid-content .item .item-details {
+  margin: 30px 42px 30px 30px;
+}
+.feature-grid-content .item .item-details h5 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* main section end */
