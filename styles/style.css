@@ -1,0 +1,95 @@
+/* fonts import*/
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:ital@0;1&family=Poppins:wght@500&family=Work+Sans&display=swap");
+
+/* html body */
+body {
+  font-family: "Work Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* primary button */
+.btn-primary {
+  background: #ff900e;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 24px;
+  border: none;
+}
+/* primary button end */
+
+/* header section start */
+header {
+  background: rgba(255, 144, 14, 0.1);
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+}
+.nav-heading {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+.nav-items > ul {
+  padding: 0;
+}
+.nav-items > ul > li {
+  display: inline;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #424242;
+  padding-right: 50px;
+}
+.nav-items > ul > li:last-child {
+  padding-right: 0;
+}
+/* navbar end */
+
+/* header container start */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 50px;
+  width: 80%;
+  margin: auto;
+}
+
+.header-content {
+  align-self: center;
+  width: 65%;
+  text-align: center;
+}
+.header-content h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: #131313;
+  margin-top: 102px;
+  margin-bottom: 32px;
+}
+.header-content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 32px;
+  margin-top: 0px;
+}
+.header-image img {
+  height: 700px;
+  width: 100%;
+}
+/* header container end */
+
+/* header section end*/
