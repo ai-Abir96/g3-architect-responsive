@@ -115,10 +115,15 @@ header {
 /* header section end*/
 
 /* main section start */
+
+/* main body end*/
 main {
   width: 80%;
   margin: auto;
 }
+/* main body end */
+
+/* quick list container  start */
 .container-quick-list {
   display: flex;
   gap: 73px;
@@ -148,7 +153,8 @@ main {
   color: var(--gray);
   margin-bottom: 24px;
 }
-
+/* quick list container  end */
+/* feature container  start */
 .features {
   padding-top: 130px;
   display: flex;
@@ -201,6 +207,28 @@ main {
   margin-bottom: 10px;
 }
 
+.btn-experience {
+  background: var(--orange);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 46px 42px;
+  border: none;
+  translate: -15% -70%;
+}
+
+.btn-experience .year {
+  font-weight: 700;
+  font-size: 65px;
+}
+.btn-experience .exp {
+  font-weight: 500;
+  font-size: 25px;
+}
+/* feature container  end */
+/* fact container  start */
 .fact-head {
   width: 40%;
 }
@@ -224,7 +252,6 @@ main {
   width: 240px;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
 }
@@ -240,7 +267,8 @@ main {
   font-weight: 600;
   font-size: 20px;
 }
-
+/* fact container  end */
+/* sponsor container  start */
 .sponsors {
   margin-top: 180px;
 }
@@ -255,10 +283,17 @@ main {
 }
 .sponcor-img {
   display: flex;
-  gap: 155px;
+  justify-content: space-between;
+  align-items: center;
+
   margin-bottom: 130px;
   margin-top: 50px;
 }
+/* sponsor container end */
+
+/* main section end */
+
+/* footer start */
 footer {
   padding: 40px;
   text-align: center;
@@ -272,5 +307,37 @@ footer p {
   color: #424242;
   margin: 0;
 }
-
-/* main section end */
+.contact {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 50px;
+}
+.contact .address {
+  width: 50%;
+}
+.contact .address h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.contact .feedback {
+  width: 50%;
+}
+.btn-send {
+  background: var(--orange);
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+}
+.contact .feedback h6 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 20px;
+}
+/* footer end */
